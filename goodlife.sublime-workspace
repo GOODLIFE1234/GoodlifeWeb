@@ -1,0 +1,719 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"tota",
+				"totalKcal"
+			],
+			[
+				"tot",
+				"totalCal"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"Delet",
+				"DeleteExercise"
+			],
+			[
+				"ac",
+				"activity"
+			],
+			[
+				"Add",
+				"AddExercise"
+			],
+			[
+				"w",
+				"w"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"ba",
+				"banner"
+			],
+			[
+				"s",
+				"src	Attr"
+			],
+			[
+				"clas",
+				"className"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"pr",
+				"prop"
+			],
+			[
+				"cu",
+				"currentId"
+			],
+			[
+				"cur",
+				"currentList"
+			],
+			[
+				"re",
+				"renderCheck"
+			],
+			[
+				"up",
+				"updateEditor"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"te",
+				"tempCheck"
+			],
+			[
+				"li",
+				"lists"
+			],
+			[
+				"ceh",
+				"check"
+			],
+			[
+				"ren",
+				"renderList"
+			],
+			[
+				"lis",
+				"list"
+			],
+			[
+				"lists",
+				"lists"
+			],
+			[
+				"lid",
+				"listRender"
+			],
+			[
+				"name",
+				"name"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"new",
+				"newExpected"
+			],
+			[
+				"fo",
+				"for	for …"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"Res",
+				"restrict"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"ca",
+				"category_id"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"sum",
+				"sumExpense"
+			],
+			[
+				"category",
+				"Category"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"requ",
+				"request"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/Http/Controllers/HomeController.php",
+			"settings":
+			{
+				"buffer_size": 880,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/Http/routes.php",
+			"settings":
+			{
+				"buffer_size": 711,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/home/exercises.blade.php",
+			"settings":
+			{
+				"buffer_size": 16321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/home/bmi.blade.php",
+			"settings":
+			{
+				"buffer_size": 4363,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/layouts/app.blade.php",
+			"settings":
+			{
+				"buffer_size": 3889,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "resources/views/home/foods.blade.php",
+			"settings":
+			{
+				"buffer_size": 2142,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 265.0,
+		"last_filter": "format",
+		"selected_items":
+		[
+			[
+				"format",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"foma",
+				"CodeFormatter: Format as HTML Syntax"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 162.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/goodlife",
+		"/C/xampp/htdocs/goodlife/app",
+		"/C/xampp/htdocs/goodlife/app/Http",
+		"/C/xampp/htdocs/goodlife/public",
+		"/C/xampp/htdocs/goodlife/resources",
+		"/C/xampp/htdocs/goodlife/resources/assets",
+		"/C/xampp/htdocs/goodlife/resources/views"
+	],
+	"file_history":
+	[
+		"/C/xampp/htdocs/goodlife/resources/views/home.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/home/exercises.blade.php",
+		"/C/xampp/htdocs/goodlife/.env",
+		"/C/xampp/htdocs/goodlife/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/goodlife/app/Http/routes.php",
+		"/C/xampp/htdocs/goodlife/resources/views/home/bmi.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/home/foods.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/welcome.blade.php",
+		"/E/NodeJs Work/posServer.bak/index.js",
+		"/E/NodeJs Work/posServer/index.js",
+		"/C/xampp/htdocs/money-flow/resources/views/home/list.blade.php",
+		"/C/xampp/htdocs/money-flow/resources/views/admin/banner.blade.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/index.blade.php",
+		"/E/Android Work/POSOwner/app/src/main/java/com/camt/th/posowner/Component/Datalibrary.java",
+		"/E/Android Work/POSOwner/app/src/main/java/com/camt/th/posowner/Component/Datasource.java",
+		"/C/xampp/htdocs/money-flow/app/Http/Controllers/HomeController.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/setting.blade.php",
+		"/C/xampp/htdocs/money-flow/app/Models/User.php",
+		"/C/xampp/htdocs/money-flow/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_07_12_185321_create_banner.php",
+		"/C/xampp/htdocs/money-flow/app/Http/Controllers/AdminController.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Banner.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_07_09_162611_create_checklist.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Checklist.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_06_07_125647_update_user_notification.php",
+		"/C/xampp/htdocs/money-flow/resources/views/layouts/footer/main.blade.php",
+		"/C/xampp/htdocs/money-flow/resources/views/layouts/header/main.blade.php",
+		"/C/xampp/htdocs/mew/lottery_manager/stock/edit.controller.php",
+		"/C/xampp/htdocs/mew/lottery_manager/header.php",
+		"/C/xampp/htdocs/mew/lottery_manager/stock/edit.php",
+		"/C/xampp/htdocs/mew/lottery_manager/lottery/buyback.php",
+		"/C/xampp/htdocs/mew/lottery_manager/lottery/buyback.controller.php",
+		"/C/xampp/htdocs/mew/lottery_manager/setting.php",
+		"/C/xampp/htdocs/mew/lottery_manager/start-body.php",
+		"/C/xampp/htdocs/mew/lottery_manager/index.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/login.blade.php",
+		"/C/Users/W.J/Downloads/Compressed/20090208193127/mySQL/thailand.sql",
+		"/C/Users/W.J/Downloads/Compressed/thailand_PA_eng.sql/thailand_PA_eng.sql",
+		"/C/xampp/htdocs/money-flow/app/Http/routes.php",
+		"/C/Users/W.J/Downloads/Compressed/ThailandProvinceDatabase/mySQL/thailand.sql",
+		"/E/C# Work/CatWeb/CatForum/CatForum/Models/Cat.cs",
+		"/E/C# Work/CatWeb/CatForum/CatForum/Models/CatBreed.cs",
+		"/E/C# Work/CatWeb/CatForum/CatForum/Scripts/modernizr-2.6.2.js",
+		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/functions.php",
+		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/xampp/htdocs/money-flow/app/Http/Kernel.php",
+		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/.env",
+		"/C/xampp/htdocs/money-flow/app/Http/Controllers/PlanController.php",
+		"/C/xampp/htdocs/money-flow/resources/views/plan/create.blade.php",
+		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/C/xampp/htdocs/por_project/wp-content/themes/twentysixteen/header.php",
+		"/E/Mark/Work/Por/Backup Config.php",
+		"/C/xampp/htdocs/money-flow/.env",
+		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/HomeController.php",
+		"/C/xampp/htdocs/money-flow/config/mail.php",
+		"/C/xampp/htdocs/money-flow/config/services.php",
+		"/C/xampp/htdocs/money-flow/resources/views/emails/reminder.blade.php",
+		"/C/xampp/htdocs/money-flow/composer.json",
+		"/C/xampp/htdocs/money-flow/app/Http/Controllers/Controller.php",
+		"/C/xampp/htdocs/money-flow/config/app.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_10_040809_create_database.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_03_06_140623_add_original_budget.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_26_154453_create_admin.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/chart.blade.php",
+		"/C/xampp/htdocs/money-flow/app/Http/Controllers/ProgressController.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/report.blade.php",
+		"/C/xampp/htdocs/money-flow/resources/views/progress/index.blade.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Plan.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_26_153555_create_feedback.php",
+		"/C/xampp/htdocs/money-flow/app/Http/Controllers/ExpenseController.php",
+		"/C/xampp/htdocs/money-flow/app/Http/Middleware/PlanSelect.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/register.blade.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/search.blade.php",
+		"/E/NodeJs Work/pos/index.js",
+		"/C/xampp/htdocs/money-flow/phpunit.xml",
+		"/C/xampp/htdocs/money-flow/config/database.php",
+		"/C/xampp/htdocs/money-flow/tests/ExampleTest.php",
+		"/C/xampp/htdocs/money-flow/tests/ProgressControllerTest.php",
+		"/C/xampp/htdocs/money-flow/tests/PlanControllerTest.php",
+		"/C/xampp/htdocs/money-flow/tests/HomeControllerTest.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Admin.php",
+		"/C/xampp/htdocs/money-flow/resources/views/home/feedback.blade.php",
+		"/C/xampp/htdocs/money-flow/tests/TestCase.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Feedback.php",
+		"/C/xampp/htdocs/money-flow/resources/views/admin/feedback.blade.php",
+		"/C/xampp/htdocs/money-flow/resources/views/expense/create.blade.php",
+		"/C/xampp/htdocs/money-flow/resources/views/admin/user.blade.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Category.php",
+		"/C/xampp/htdocs/money-flow/database/seeds/simpleData.php",
+		"/C/xampp/htdocs/money-flow/resources/views/admin/index.blade.php",
+		"/C/Users/W.J/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/E/Java Work/POSSetting/POSSetting/src/possetting/config.js",
+		"/C/xampp/htdocs/money-flow/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_11_185125_update_plan.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_10_170111_update_user_table.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_11_075703_add_plan_period.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_16_135858_change_string_to_int.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Daily.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Monthly.php",
+		"/C/xampp/htdocs/money-flow/app/Http/Middleware/VerifyCsrfToken.php",
+		"/C/xampp/htdocs/money-flow/app/Http/Middleware/Authenticate.php",
+		"/E/NodeJs Work/pos/style.css",
+		"/E/NodeJs Work/pos/config.js",
+		"/E/NodeJs Work/pos/index.jade",
+		"/C/xampp/htdocs/money-flow/app/Models/Finance.php",
+		"/C/xampp/htdocs/money-flow/app/Models/Restrict.php",
+		"/C/Users/W.J/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/Default (Windows).sublime-keymap",
+		"/C/Users/W.J/AppData/Roaming/Sublime Text 3/Packages/User/CodeFormatter.sublime-settings",
+		"/C/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/C/Users/W.J/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings"
+	],
+	"find":
+	{
+		"height": 21.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.log",
+			"console.log3",
+			"แนืหนสำใสนเ",
+			"2ZrQxiZdODYoJ7J:C23f6XbBKToaWyehdGXbkAeMCQ5aDL",
+			"data:image/jpeg;base64,",
+			"บ้าน",
+			", ., ",
+			"(\\(.* ',) ",
+			"(\\(.,)",
+			"(\\(..,)",
+			", .\\),",
+			"(, .\\),)",
+			"(, '..', '.+ ')",
+			"(, '..', ')",
+			", '10', '",
+			"(, '..', ')",
+			"body.custom-background",
+			"\">\n",
+			"1",
+			"category",
+			">\n",
+			";\n",
+			"succes",
+			"budget",
+			"                                    ",
+			"                                ",
+			"                                   </",
+			",11",
+			"                                   ",
+			"->id"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"qYGfFjDAnO3DR7C:LBQkdwIIavBj7CbIgglKOmhGX",
+			"",
+			",",
+			"(",
+			"),",
+			")",
+			",'",
+			",",
+			"",
+			"->user_id"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 5,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/Http/Controllers/HomeController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								868,
+								868
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/Http/routes.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								671,
+								671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "resources/views/home/exercises.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								16321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 351.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "resources/views/home/bmi.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3869,
+								2251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 416.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "resources/views/layouts/app.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3870,
+								3870
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "resources/views/home/foods.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2142,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1939,
+								1939
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 156.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "goodlife.sublime-project",
+	"replace":
+	{
+		"height": 38.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 1289.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
