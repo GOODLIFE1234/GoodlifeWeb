@@ -1,6 +1,6 @@
 <?php
 namespace App\Http\Controllers;
-
+use App\Models\Food;
 class HomeController extends Controller
 {
 /**
@@ -31,7 +31,8 @@ class HomeController extends Controller
     }
     public function getFoods()
     {
-        return view('home.foods');
+        $data['foods'] = Food::all();
+        return view('home.foods',$data);
     }
     public function postFoods()
     {
