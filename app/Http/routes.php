@@ -22,10 +22,15 @@ Route::group(['prefix' => 'api'], function () {
     Route::get('exercises', 'RestController@getExercise');
 });
 /*User*/
-Route::get('/home', 'HomeController@index');
-Route::get('/bmi', 'HomeController@getBMI');
-Route::get('/foods-calculator', 'HomeController@getFoods');
-Route::get('/exercises-calculator', 'HomeController@getExercise');
+Route::get('/bmi', 'UserController@displayBMI');
+Route::get('/bmr', 'UserController@displayBMR');
+Route::get('/foods-calculator', 'UserController@displayFoods');
+Route::get('/exercises-calculator', 'UserController@displayExercises');
+
+Route::post('/bmi', 'UserController@displayBMI');
+Route::post('/bmr', 'UserController@displayBMR');
+Route::post('/foods-calculator', 'UserController@displayFoods');
+Route::post('/exercises-calculator', 'UserController@displayExercises');
 /*Admin*/
 Route::group(['prefix' => 'admin'], function () {
 /*GET*/
