@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
 			<div class="panel panel-default">
-				<div class="panel-heading">BMI Calculator</div>
+				<div class="panel-heading">BMR Calculator</div>
 				<div class="panel-body">
 					<form method="POST" action="">
 						<div class="row" >
