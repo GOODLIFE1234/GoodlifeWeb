@@ -38,6 +38,7 @@ class UserController extends Controller
                 return view('user.bmi', ['error' => $calBMI]);
             }
         } else {
+			// return var_dump(view('user.bmi'));
             return view('user.bmi');
         }
     }
@@ -260,7 +261,7 @@ class UserController extends Controller
         if ($id === 0 || $id === null || $id === "") {
             return "Id is missing";
         }
-        if ($weight === 0 || $weight === null || $weight === "") {
+        if ($weight === 0 || $weight === null || $weight === "" || $weight === "0") {
             return "Weight is missing";
         }
         if ($time === 0 || $time === null || $time === "") {

@@ -86,21 +86,21 @@
 @endsection
 @section('script')
 <script>
-	var Calculate = function(){
-		$("#result").show();
-		var a = $("[name=age]").val();
-		var w = $("[name=weight]").val();
-		var h = $("[name=height]").val();
-		var g = $("[name=gender]").val();
-		var cal = 0;
-		if(g == 1){
-			cal = (13.937*w)+(4.799*h)-(5.677*a)+88.362;
-		}
-		else if(g == 2){
-			cal = (9.247*w)+(3.098*h)-(4.330*a)+447.593;
-		}
-		console.log(cal);
-		$('#bmrResult').html(cal.toFixed(2));
-	}
+	// var Calculate = function(){
+		// $("#result").show();
+		// var a = $("[name=age]").val();
+		// var w = $("[name=weight]").val();
+		// var h = $("[name=height]").val();
+		// var g = $("[name=gender]").val();
+		// var cal = 0;
+		// if(g == 1){
+			// cal = (13.937*w)+(4.799*h)-(5.677*a)+88.362;
+		// }
+		// else if(g == 2){
+			// cal = (9.247*w)+(3.098*h)-(4.330*a)+447.593;
+		// }
+		// console.log(cal);
+		// $('#bmrResult').html(cal.toFixed(2));
+	// }
 </script>
 @endsection
