@@ -38,7 +38,7 @@ class UserController extends Controller
                 return view('user.bmi', ['error' => $calBMI]);
             }
         } else {
-			// return var_dump(view('user.bmi'));
+            // return var_dump(view('user.bmi'));
             return view('user.bmi');
         }
     }
@@ -162,9 +162,13 @@ class UserController extends Controller
             }
         } else {
             $list = array('total' => 0);
+            unset($list[$id]);
+            Session::put('exerciseList', $list);
+            return false;
         }
         unset($list[$id]);
         Session::put('foodList', $list);
+        return true;
     }
     public function delExercise($id)
     {
@@ -175,9 +179,13 @@ class UserController extends Controller
             }
         } else {
             $list = array('total' => 0);
+            unset($list[$id]);
+            Session::put('exerciseList', $list);
+            return false;
         }
         unset($list[$id]);
         Session::put('exerciseList', $list);
+        return true;
     }
     public function calBMI($w, $h, $a, $g)
     {
@@ -193,9 +201,9 @@ class UserController extends Controller
         if ($h === 0 || $h === null || $h === "") {
             return "Height is missing";
         }
-        $hm = $h / 100;
+        $hm  = $h / 100;
         $cal = $w / ($hm * $hm);
-        return $cal;
+        return round($cal, 2);
     }
     public function retrieveBMI($bmi)
     {
@@ -239,14 +247,14 @@ class UserController extends Controller
         } else if ($g === '2') {
             $cal = (9.247 * $w) + (3.098 * $h) - (4.330 * $a) + 447.593;
         }
-        return $cal;
+        return round($cal, 2);
     }
     public function calFood($id, $amount)
     {
         if ($id === 0 || $id === null || $id === "") {
             return "Id is missing";
         }
-        if ($amount === 0 || $amount === null || $amount === "") {
+        if ($amount === 0 || $amount === null || $amount === "" || $amount < 0) {
             return "Amount is missing";
         }
         $food = Food::find($id);
