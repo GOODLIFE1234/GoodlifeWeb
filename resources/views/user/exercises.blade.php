@@ -59,7 +59,7 @@
 										$list = Session::get('exerciseList');
 										foreach ($list as $key => $value) { 
 											if($key !== "total"){?>
-											<div><span> {{$value['name']}} </span> - {{$value['mins']}} mins [<a href="?del={{$key}}"> Delete</a>]</div>
+											<div><span> {{$value['name']}} </span> - {{$value['mins']}} mins [<a href="?del={{$key}}" onclick="return confirm('Are you confirm to delete?')"> Delete</a>]</div>
 										<?php }
 										}
 									}
