@@ -31,6 +31,24 @@ Route::post('/bmi', 'UserController@displayBMI');
 Route::post('/bmr', 'UserController@displayBMR');
 Route::post('/foods-calculator', 'UserController@displayFoods');
 Route::post('/exercises-calculator', 'UserController@displayExercises');
+/*Member*/
+Route::group(['prefix' => 'member'], function () {
+/*GET*/
+    /*For Test*/
+    Route::get('/bmr', 'MemberController@displayBMR');
+    Route::get('/foods', 'MemberController@displayFoods');
+    /*End*/
+    Route::get('/food-planner/delete', 'MemberController@postDelFoodPlanner');
+    Route::get('/food-planner', 'MemberController@displayFoodPlanner');
+    Route::get('/foods-planner-history', 'MemberController@displayFoodPlannerHistory');
+    Route::get('/{id}', 'MemberController@displayProfile');
+
+
+/*POST*/
+    Route::post('/update', 'MemberController@postUpdateUser');
+    Route::post('/food-planner', 'MemberController@postAddFoodPlanner');
+});
+
 /*Admin*/
 Route::group(['prefix' => 'admin'], function () {
 /*GET*/

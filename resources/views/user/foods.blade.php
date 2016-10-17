@@ -6,8 +6,9 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Foods Calculator</div>
 				<div class="panel-body">
-					<div class="row">
-						<form action="" method="POST">
+					<form action="<?php if (Auth::check()) {echo url('/member/food-planner');}?>" method="POST">
+						{{ csrf_field() }}
+						<div class="row">
 							@foreach($foods as $food)
 							<div class="col-md-6">
 								<!-- 							<div class="checkbox" id="food_{{$food->id}}">
@@ -16,10 +17,10 @@
 									</label>
 								</div> -->
 								<!-- <div class="input-group">
-											<span class="input-group-addon">
-														<input type="checkbox" name="food[]"  id="food_check_{{$food->id}}" class="food_checkbox" value="$food->id" onclick="AddFood('{{$food->name}}',{{$food->kcal}},{{$food->id}}, this)"> {{$food->name}} | {{$food->kcal}} Kcal
-											</span>
-											<input type="text" placeholder="amount" id="food_amount_{{$food->id}}" value="0" class="form-control" aria-label="...">
+														<span class="input-group-addon">
+																				<input type="checkbox" name="food[]"  id="food_check_{{$food->id}}" class="food_checkbox" value="$food->id" onclick="AddFood('{{$food->name}}',{{$food->kcal}},{{$food->id}}, this)"> {{$food->name}} | {{$food->kcal}} Kcal
+														</span>
+														<input type="text" placeholder="amount" id="food_amount_{{$food->id}}" value="0" class="form-control" aria-label="...">
 								</div> -->
 								<div class="input-group">
 									<span class="input-group-addon">
@@ -32,34 +33,41 @@
 							</div>
 							@endforeach
 							<!-- <div class="col-sm-6">
-																		<div class="input-group">
-																													<input type="text" class="form-control" placeholder="Food" name="food">
-																		</div>
+																					<div class="input-group">
+																																			<input type="text" class="form-control" placeholder="Food" name="food">
+																					</div>
 							</div>
 							<div class="col-sm-6">
-																		<div class="input-group">
-																													<input type="text" class="form-control" placeholder="Amount" name="amount" aria-describedby="amount-addon" value="0">
-																													<span class="input-group-addon" id="amount-addon">Kg</span>
-																		</div>
+																					<div class="input-group">
+																																			<input type="text" class="form-control" placeholder="Amount" name="amount" aria-describedby="amount-addon" value="0">
+																																			<span class="input-group-addon" id="amount-addon">Kg</span>
+																					</div>
 							</div> -->
+						</div>
+						<div class="row" style="padding-top: 20px;">
+							@if(Auth::check())
+							<div class="col-sm-12 text-center" >
+								<select name="time">
+									<option value="1">Breakfast</option>
+									<option value="2">Lunch</option>
+									<option value="3">Dinner</option>
+									<option value="4">Snack</option>
+								</select>
+								<button type="submit" class="btn btn-success" onclick="AddFood();" >Save Today Foods</button>
+							</div>
+							@else
 							<div class="col-md-12 text-center">
-								{{ csrf_field() }}
 								<button type="submit" class="btn btn-success">Add Foods</button>
 							</div>
-						</form>
-					</div>
-					<div class="row" style="padding-top: 20px;">
-						@if(Auth::check())
-						<div class="col-sm-12 text-center" >
-							<button type="button" class="btn btn-success" onclick="AddFood();" >Save Today Foods</button>
+							@endif
+							<!-- <div class="col-sm-12 text-center" >
+														<button type="button" class="btn btn-success" onclick="AddFood();" >Add Food</button>
+							</div> -->
 						</div>
-						@endif
-						<!-- <div class="col-sm-12 text-center" >
-										<button type="button" class="btn btn-success" onclick="AddFood();" >Add Food</button>
-						</div> -->
-					</div>
+					</form>
 				</div>
 			</div>
+			@if(!Auth::check())
 			<div class="panel panel-default" id="result">
 				<div class="panel-heading">Result</div>
 				<div class="panel-body">
@@ -67,24 +75,27 @@
 						<div class="col-sm-6">
 							<h2>Your Foods</h2>
 							<div id="foodList">
-								<?php 
-									if(Session::has('foodList')){
-										$list = Session::get('foodList');
-										foreach ($list as $key => $value) { 
-											if($key !== "total"){?>
-											<div><span> {{$value['name']}} </span> : Amount {{$value['amount']}} - {{$value['total']}} Kcal [<a href="?del={{$key}}" onclick="return confirm('Are you confirm to delete?')"> Delete</a>]</div>
-										<?php }
-										}
-									}
+								<?php
+								if (Session::has('foodList')) {
+								$list = Session::get('foodList');
+								foreach ($list as $key => $value) {
+								if ($key !== "total") {?>
+								<div><span> {{$value['name']}} </span> : Amount {{$value['amount']}} - {{$value['total']}} Kcal [<a href="?del={{$key}}" onclick="return confirm('Are you confirm to delete?')"> Delete</a>]</div>
+								<?php }
+								}
+								}
 								?>
 							</div>
 						</div>
 						<div class="col-sm-6">
-							<p>Your total calories is <span id="totalKcal" style="font-size: 1.5em;"><?php if(Session::has('foodList')){$list = Session::get('foodList'); print($list["total"]);} ?></span> kcal</p>
+							<p>Your total calories is <span id="totalKcal" style="font-size: 1.5em;"><?php if (Session::has('foodList')) {
+								$list = Session::get('foodList');
+							print($list["total"]);}?></span> kcal</p>
 						</div>
 					</div>
 				</div>
 			</div>
+			@endif
 		</div>
 	</div>
 </div>

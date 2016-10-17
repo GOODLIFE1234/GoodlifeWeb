@@ -39,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li><a href="{{ url('/home') }}">Home</a></li>
+                        <!-- <li><a href="{{ url('/home') }}">Home</a></li> -->
                         <li><a href="{{ url('/bmi') }}">BMI</a></li>
                         <li><a href="{{ url('/bmr') }}">BMR</a></li>
                         <li><a href="{{ url('/foods-calculator') }}">Foods Calories Calculator</a></li>
@@ -54,9 +54,12 @@
                         @else
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                {{ Auth::user()->name }} <span class="caret"></span>
+                                {{ Auth::user()->username }} <span class="caret"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu">
+                                <?php $id = Auth::user()->id;?>
+                                <li><a href="{{ url('/member/food-planner'  ) }}"><i class="fa fa-btn fa-heart"></i>Food Planner</a></li>
+                                <li><a href="{{ url('/member/'.$id) }}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
                         </li>
@@ -68,10 +71,14 @@
         <?php if (isset($error)) {?>
         <div class="row"><div class="alert alert-danger text-center" role="alert">{{$error}}</div></div>
         <?php }?>
+        <?php if (session('error')) {?>
+        <div class="row"><div class="alert alert-danger text-center" role="alert">{{session('error')}}</div></div>
+        <?php }?>
         @yield('content')
         <!-- JavaScripts -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js" integrity="sha384-I6F5OKECLVtK/BL+8iSLDEHowSAfUo76ZL9+kGAgTRdiByINKJaqTPH/QVNS1VDb" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.5/validator.js"></script>
         {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
         @yield('script')
     </body>

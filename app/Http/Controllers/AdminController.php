@@ -26,6 +26,54 @@ class AdminController extends Controller
     {
         return view('admin.login');
     }
+
+    public function displayUserList()
+    {
+        $users = User::take(10)->get();
+        return json_encode($users);
+    }
+
+    public function deleteUser($id)
+    {
+        $user = User::find($id);
+        if ($user !== null) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    public function searchUser($name, $surname)
+    {
+        $user  = new User();
+        $userN = null;
+        $userS = null;
+        if ($name !== '') {
+            $userN = $user->where('name', 'like', "%$name%")->get();
+        }
+        if ($surname !== '') {
+            $userS = $user->where('surname', 'like', "%$surname%")->get();
+        }
+
+        // ->orWhere('surname', 'like', "%$surname%")
+        // ->take(10)
+        // $merged = $userName->merge($userSurname);
+        if ($userN === null) {
+            $merged = $userS;
+        } 
+        if ($userS === null) {
+            $merged = $userN;
+        }
+        if ($userS !== null && $userN !== null){
+            $merged = $userN->merge($userS);
+        }
+
+        if ($merged !== null && !$merged->isEmpty()) {
+            return json_encode($merged);
+        } else {
+            return "No User";
+        }
+    }
+    /*BreakPoint*/
     /*Users*/
     public function getUsers(Request $request)
     {
@@ -33,7 +81,21 @@ class AdminController extends Controller
         if (isset($request->p) && is_numeric($request->p)) {
             $skip = $request->p;
         }
-        $data            = User::skip($skip)->take(25)->get();
+
+        $data   = new User;
+        $search = "";
+        if (isset($request->n)) {
+            $search = $request->n;
+            $data   = $data
+                ->where('name', 'like', "%$search%")
+                ->orWhere('surname', 'like', "%$search%")
+                ->skip($skip)->take(25)->get();
+        } else {
+            $data = $data
+                ->skip($skip)->take(25)->get();
+        }
+
+        // echo var_dump($data);
         $attach          = array();
         $attach["users"] = $data;
         return view('admin.users', $attach);
@@ -117,13 +179,13 @@ class AdminController extends Controller
     {
         try {
             $id = null;
-            if($request->has('id')){
+            if ($request->has('id')) {
                 $id = $request->input('id');
-            }else{
+            } else {
                 return redirect('admin/foods');
             }
             $old = Food::find($id);
-            if(is_null($old)){
+            if (is_null($old)) {
                 return redirect('admin/foods');
             }
             $old->name = $request->input("name");

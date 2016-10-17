@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 use App\Models\BMI;
 use App\Models\Exercise;
 use App\Models\Food;
+use App\Models\UserProfile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Session;
 
 class UserController extends Controller
@@ -32,6 +34,17 @@ class UserController extends Controller
             $calBMI = $this->calBMI($input["weight"], $input["height"], $input["age"], $input["gender"]);
             if (is_numeric($calBMI)) {
                 $detail = $this->retrieveBMI($calBMI);
+                if (Auth::check()) {
+                    $user    = Auth::user();
+                    $profile = $user->profile;
+                    if ($profile === null) {$profile = new UserProfile();}
+                    $profile->user_id = $user->id;
+                    $profile->height = $input["height"];
+                    $profile->weight = $input["weight"];
+                    $profile->age    = $input["age"];
+                    $profile->bmi    = $calBMI;
+                    $profile->save();
+                }
                 // var_dump($detail);
                 return view('user.bmi', ['detail' => $detail, 'bmi' => $calBMI]);
             } else {
@@ -49,6 +62,17 @@ class UserController extends Controller
             // var_dump($input);
             $calBMI = $this->calBMR($input["weight"], $input["height"], $input["age"], $input["gender"]);
             if (is_numeric($calBMI)) {
+                if (Auth::check()) {
+                    $user = Auth::user();
+                    $profile = $user->profile;
+                    if ($profile === null) {$profile = new UserProfile();}
+                    $profile->user_id = $user->id;
+                    $profile->height = $input["height"];
+                    $profile->weight = $input["weight"];
+                    $profile->age    = $input["age"];
+                    $profile->bmr    = $calBMI;
+                    $profile->save();
+                }
                 return view('user.bmr', ['bmi' => $calBMI]);
             } else {
                 return view('user.bmr', ['error' => $calBMI]);
