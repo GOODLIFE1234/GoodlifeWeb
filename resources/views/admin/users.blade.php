@@ -49,7 +49,7 @@
 						<td>{{$user->email}}</td>
 						<td>{{$user->name}}</td>
 						<td>{{$user->surname}}</td>
-						<td><a href="users/delete/{{$user->id}}">Delete</a></td>
+						<td><a href="users/delete/{{$user->id}}" onclick="return confirm('Confirm delete?');">Delete</a></td>
 					</tr>
 					@endforeach
 				</table>

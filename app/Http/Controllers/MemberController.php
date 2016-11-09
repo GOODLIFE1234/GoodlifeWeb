@@ -16,6 +16,7 @@ class MemberController extends Controller
  * @return void
  */
     protected $template = null;
+    protected $testData = null;
     public function __construct()
     {
         $this->template = [
@@ -64,6 +65,16 @@ class MemberController extends Controller
             ],
         ];
         $this->middleware('auth', ['only' => ['displayProfile', 'displayFoodPlanner', 'displayBMR']]);
+        $this->testData = [
+            'Day'       => "Monday",
+            'Breakfast' => 'Pizza:1=200Kcal',
+            'Lunch'     => '-',
+            'Dinner'    => '-',
+            'Snack'     => '-',
+            'BMR'       => '2000',
+            'Calorie'   => '200',
+            'Today'     => '1800',
+        ];
     }
 /**
  * Show the application dashboard.
@@ -141,17 +152,17 @@ class MemberController extends Controller
         if (Auth::Check()) {
             $user    = Auth::user();
             $profile = $user->profile;
-            return "BMR: " . $profile->bmr;
+            return view('welcome',['BMR' => $profile->bmr]);
         }
-        return "";
+        return view('welcome');
     }
     public function displayFoods()
     {
-        $planner = Session::get('foodPlanner');
+        $planner = Session::get('planner');
         if ($planner !== null) {
-            return json_encode($planner);
+            return view('welcome',['planner' => $planner]);
         }
-        return json_encode("No Data");
+        return view('welcome');
     }
 /*Break Point*/
     public function postUpdateUser(Request $request)
@@ -190,7 +201,8 @@ class MemberController extends Controller
         }
         Session::put('today', json_decode($planner->today));
         Session::put('yesterday', json_decode($planner->yesterday));
-        return view('user.fplanner');
+        $attach = $this->testData;
+        return view('user.fplanner',$attach);
     }
     public function displayFoodPlannerHistory()
     {
@@ -211,7 +223,8 @@ class MemberController extends Controller
         }
         Session::put('today', json_decode($planner->today));
         Session::put('yesterday', json_decode($planner->yesterday));
-        return view('user.history');
+        $attach = $this->testData;
+        return view('user.history',$attach);
     }
     public function postAddFoodPlanner(Request $request)
     {

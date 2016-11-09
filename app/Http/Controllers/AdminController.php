@@ -5,6 +5,7 @@ use App\Models\Exercise;
 use App\Models\Food;
 use App\User;
 use Illuminate\Http\Request;
+use Session;
 
 class AdminController extends Controller
 {
@@ -15,7 +16,7 @@ class AdminController extends Controller
  */
     public function __construct()
     {
-// $this->middleware('auth');
+        $this->middleware('authAdmin',['except' => ['index','postLogin']]);
     }
 /**
  * Show the application dashboard.
@@ -59,11 +60,11 @@ class AdminController extends Controller
         // $merged = $userName->merge($userSurname);
         if ($userN === null) {
             $merged = $userS;
-        } 
+        }
         if ($userS === null) {
             $merged = $userN;
         }
-        if ($userS !== null && $userN !== null){
+        if ($userS !== null && $userN !== null) {
             $merged = $userN->merge($userS);
         }
 
@@ -74,6 +75,17 @@ class AdminController extends Controller
         }
     }
     /*BreakPoint*/
+    /*Login*/
+    public function postLogin(Request $request)
+    {
+        if ($request->has('username') && $request->has('password')) {
+            if ($request->username === "admin" && $request->password === "1234") {
+                Session::put('admin',true);
+                return redirect('admin/users');
+            }
+        }
+        return redirect('admin/');
+    }
     /*Users*/
     public function getUsers(Request $request)
     {
@@ -108,16 +120,18 @@ class AdminController extends Controller
         }
         return redirect('admin/foods');
     }
-    public function getDeleteUser(Request $request)
+    public function getDeleteUser($id)
     {
-        $skip = 0;
-        if (isset($request->p) && is_numeric($request->p)) {
-            $skip = $request->p;
-        }
-        $data            = User::skip($skip)->take(25)->get();
-        $attach          = array();
-        $attach["users"] = $data;
-        return view('admin.users', $attach);
+        // $skip = 0;
+        // if (isset($request->p) && is_numeric($request->p)) {
+        //     $skip = $request->p;
+        // }
+        // $data            = User::skip($skip)->take(25)->get();
+        // $attach          = array();
+        // $attach["users"] = $data;
+        $user = User::find($id);
+        $user->delete();
+        return redirect('admin/users');
     }
     public function postUpdateFUser(Request $request)
     {

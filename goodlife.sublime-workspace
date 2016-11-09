@@ -4,6 +4,78 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"response"
+			],
+			[
+				"null",
+				"null"
+			],
+			[
+				"user",
+				"userS"
+			],
+			[
+				"users",
+				"usersName"
+			],
+			[
+				"js",
+				"json_encode"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"jso",
+				"json_encode"
+			],
+			[
+				"planner",
+				"planner"
+			],
+			[
+				"food",
+				"foodPlanner"
+			],
+			[
+				"S",
+				"Session"
+			],
+			[
+				"dis",
+				"displayBMR"
+			],
+			[
+				"c",
+				"currentWeek"
+			],
+			[
+				"W",
+				"W"
+			],
+			[
+				"toda",
+				"todayTotal"
+			],
+			[
+				"to",
+				"todayTotal"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
 				"con",
 				"controller"
 			],
@@ -24,20 +96,8 @@
 				"exercise"
 			],
 			[
-				"re",
-				"return"
-			],
-			[
 				"fo",
 				"foreach\tforeach …"
-			],
-			[
-				"va",
-				"value"
-			],
-			[
-				"food",
-				"foodList"
 			],
 			[
 				"ac",
@@ -72,10 +132,6 @@
 				"totalCal"
 			],
 			[
-				"id",
-				"id"
-			],
-			[
 				"Delet",
 				"DeleteExercise"
 			],
@@ -88,10 +144,6 @@
 				"w"
 			],
 			[
-				"json",
-				"json_encode"
-			],
-			[
 				"ba",
 				"banner"
 			],
@@ -102,10 +154,6 @@
 			[
 				"clas",
 				"className"
-			],
-			[
-				"js",
-				"json_encode"
 			],
 			[
 				"pr",
@@ -180,10 +228,6 @@
 				"restrict"
 			],
 			[
-				"c",
-				"class\tAttr"
-			],
-			[
 				"ca",
 				"category_id"
 			],
@@ -212,28 +256,19 @@
 	"buffers":
 	[
 		{
-			"file": "app/Http/Controllers/AdminController.php",
+			"file": "/C/xampp/htdocs/busbooking/index.php",
 			"settings":
 			{
-				"buffer_size": 5438,
+				"buffer_size": 876,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "resources/views/user/profile.blade.php",
+			"file": "tests/MemberControllerTest.php",
 			"settings":
 			{
-				"buffer_size": 3993,
+				"buffer_size": 6854,
 				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "profile.blade.php"
-			}
-		},
-		{
-			"file": "app/Http/Controllers/UserController.php",
-			"settings":
-			{
-				"buffer_size": 9640,
 				"line_ending": "Windows"
 			}
 		},
@@ -241,62 +276,7 @@
 			"file": "app/Http/Controllers/MemberController.php",
 			"settings":
 			{
-				"buffer_size": 523,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "MemberController.php"
-			}
-		},
-		{
-			"file": "app/Http/routes.php",
-			"settings":
-			{
-				"buffer_size": 2596,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/user/fplanner.blade.php",
-			"settings":
-			{
-				"buffer_size": 2403,
-				"encoding": "UTF-8",
-				"line_ending": "Windows",
-				"name": "fplanner.blade.php"
-			}
-		},
-		{
-			"file": "resources/views/user/bmr.blade.php",
-			"settings":
-			{
-				"buffer_size": 3693,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "resources/views/auth/register.blade.php",
-			"settings":
-			{
-				"buffer_size": 3903,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/auth/login.blade.php",
-			"settings":
-			{
-				"buffer_size": 2972,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "resources/views/admin/users.blade.php",
-			"settings":
-			{
-				"buffer_size": 1491,
-				"encoding": "UTF-8",
+				"buffer_size": 10218,
 				"line_ending": "Windows"
 			}
 		}
@@ -350,36 +330,51 @@
 	},
 	"expanded_folders":
 	[
-		"/C/xampp/htdocs/goodlife",
-		"/C/xampp/htdocs/goodlife/app",
-		"/C/xampp/htdocs/goodlife/app/Http",
-		"/C/xampp/htdocs/goodlife/app/Http/Controllers",
-		"/C/xampp/htdocs/goodlife/app/Jobs",
-		"/C/xampp/htdocs/goodlife/app/Listeners",
-		"/C/xampp/htdocs/goodlife/app/Models",
-		"/C/xampp/htdocs/goodlife/app/Policies",
-		"/C/xampp/htdocs/goodlife/resources",
-		"/C/xampp/htdocs/goodlife/resources/views",
-		"/C/xampp/htdocs/goodlife/resources/views/user",
-		"/C/xampp/htdocs/goodlife/resources/views/vendor",
-		"/C/xampp/htdocs/goodlife/tests"
+		"/C/xampp/htdocs/goodlife"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/goodlife/tests/MemberControllerTest.php",
+		"/C/xampp/htdocs/goodlife/app/Http/routes.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Controllers/MemberController.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Controllers/AdminController.php",
+		"/C/xampp/htdocs/goodlife/database/factories/ModelFactory.php",
+		"/C/xampp/htdocs/goodlife/tests/UserControllerTest.php",
+		"/C/xampp/htdocs/goodlife/tests/AdminControllerTest.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Controllers/UserController.php",
+		"/C/xampp/htdocs/goodlife/resources/views/user/fplanner.blade.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_10_16_222858_update_food_planner.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123522_create_user_profile_table.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_10_17_004319_update_user_profile.php",
+		"/C/xampp/htdocs/goodlife/resources/views/user/history.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/admin/foods.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/user/foods.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/goodlife/storage/framework/views/d4ef73ece5e642d793aef8424f1f2a58a05cd204.php",
+		"/C/xampp/htdocs/goodlife/app/User.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123458_create_food_planner_table.php",
+		"/C/xampp/htdocs/goodlife/resources/views/admin/users.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/user/profile.blade.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_10_16_205403_update_user.php",
+		"/C/xampp/htdocs/goodlife/resources/views/auth/register.blade.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Middleware/Authenticate.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Controllers/Auth/AuthController.php",
+		"/C/xampp/htdocs/goodlife/resources/views/auth/login.blade.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_08_07_100817_change_expense.php",
+		"/C/xampp/htdocs/money-flow/database/migrations/2016_06_07_125647_update_user_notification.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Middleware/EncryptCookies.php",
+		"/C/xampp/htdocs/goodlife/app/Http/Middleware/AdminAuthentication.php",
 		"/C/Games/World of Warcraft/WTF/Account/92210670#1/config-cache.wtf",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/login.blade.php",
 		"/C/xampp/htdocs/goodlife/app/Models/UserProfile.php",
-		"/C/xampp/htdocs/goodlife/app/Http/Controllers/UserController.php",
 		"/C/xampp/htdocs/goodlife/tests/TestCase.php",
 		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/home.blade.php",
-		"/C/xampp/htdocs/goodlife/tests/UserControllerTest.php",
 		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/master.blade.php",
 		"/C/xampp/htdocs/goodlife/tests/ExampleTest.php",
 		"/C/xampp/htdocs/goodlife/resources/views/user/bmi.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/user/bmr.blade.php",
-		"/C/xampp/htdocs/goodlife/app/Http/routes.php",
-		"/C/xampp/htdocs/goodlife/resources/views/user/foods.blade.php",
-		"/C/xampp/htdocs/goodlife/resources/views/layouts/app.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/user/exercises.blade.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_09_08_214440_create_bmi.php",
 		"/C/xampp/htdocs/goodlife/app/Models/BMI.php",
@@ -387,9 +382,7 @@
 		"/C/xampp/htdocs/goodlife/database/seeds/ExerciseTable.php",
 		"/C/xampp/htdocs/goodlife/database/seeds/BMITable.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_24_021940_exercises_data.php",
-		"/C/xampp/htdocs/goodlife/app/Http/Controllers/AdminController.php",
 		"/C/xampp/htdocs/goodlife/app/Models/Food.php",
-		"/C/xampp/htdocs/goodlife/resources/views/admin/foods.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/exercises.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/editFood.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/home/foods.blade.php",
@@ -399,9 +392,6 @@
 		"/E/C# Work/CatWeb/CatForum/CatForum/Repositories/PostDetailRepository.cs",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/addFood.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/addExercise.blade.php",
-		"/C/xampp/htdocs/goodlife/resources/views/admin/users.blade.php",
-		"/C/xampp/htdocs/goodlife/app/Http/Middleware/AdminAuthentication.php",
-		"/C/xampp/htdocs/goodlife/app/Http/Middleware/Authenticate.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/exercise.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/food.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/user.blade.php",
@@ -412,13 +402,10 @@
 		"/C/xampp/htdocs/goodlife/app/Models/FoodPlanner.php",
 		"/C/xampp/htdocs/goodlife/app/Models/UserReport.php",
 		"/C/xampp/htdocs/goodlife/app/Models/UserMovement.php",
-		"/C/xampp/htdocs/goodlife/database/migrations/2014_10_12_000000_create_users_table.php",
-		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123458_create_food_planner_table.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123624_create_user_movement_table.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_24_021922_foods_data.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123509_create_exercise_planner_table.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123703_create_user_report_table.php",
-		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123522_create_user_profile_table.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2014_10_12_100000_create_password_resets_table.php",
 		"/C/xampp/htdocs/goodlife/resources/views/home/exercises.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/home/bmi.blade.php",
@@ -441,7 +428,6 @@
 		"/C/xampp/htdocs/money-flow/app/Models/Banner.php",
 		"/C/xampp/htdocs/money-flow/database/migrations/2016_07_09_162611_create_checklist.php",
 		"/C/xampp/htdocs/money-flow/app/Models/Checklist.php",
-		"/C/xampp/htdocs/money-flow/database/migrations/2016_06_07_125647_update_user_notification.php",
 		"/C/xampp/htdocs/money-flow/resources/views/layouts/footer/main.blade.php",
 		"/C/xampp/htdocs/money-flow/resources/views/layouts/header/main.blade.php",
 		"/C/xampp/htdocs/mew/lottery_manager/stock/edit.controller.php",
@@ -475,25 +461,7 @@
 		"/C/xampp/htdocs/money-flow/config/services.php",
 		"/C/xampp/htdocs/money-flow/resources/views/emails/reminder.blade.php",
 		"/C/xampp/htdocs/money-flow/composer.json",
-		"/C/xampp/htdocs/money-flow/app/Http/Controllers/Controller.php",
-		"/C/xampp/htdocs/money-flow/config/app.php",
-		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_10_040809_create_database.php",
-		"/C/xampp/htdocs/money-flow/database/migrations/2016_03_06_140623_add_original_budget.php",
-		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_26_154453_create_admin.php",
-		"/C/xampp/htdocs/money-flow/resources/views/home/chart.blade.php",
-		"/C/xampp/htdocs/money-flow/app/Http/Controllers/ProgressController.php",
-		"/C/xampp/htdocs/money-flow/resources/views/home/report.blade.php",
-		"/C/xampp/htdocs/money-flow/resources/views/progress/index.blade.php",
-		"/C/xampp/htdocs/money-flow/app/Models/Plan.php",
-		"/C/xampp/htdocs/money-flow/database/migrations/2016_02_26_153555_create_feedback.php",
-		"/C/xampp/htdocs/money-flow/app/Http/Controllers/ExpenseController.php",
-		"/C/xampp/htdocs/money-flow/app/Http/Middleware/PlanSelect.php",
-		"/C/xampp/htdocs/money-flow/resources/views/home/register.blade.php",
-		"/C/xampp/htdocs/money-flow/resources/views/home/search.blade.php",
-		"/E/NodeJs Work/pos/index.js",
-		"/C/xampp/htdocs/money-flow/phpunit.xml",
-		"/C/xampp/htdocs/money-flow/config/database.php",
-		"/C/xampp/htdocs/money-flow/tests/ExampleTest.php"
+		"/C/xampp/htdocs/money-flow/app/Http/Controllers/Controller.php"
 	],
 	"find":
 	{
@@ -511,6 +479,10 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"$user->profile",
+			"today",
+			"StdClass",
+			"[]",
 			"foreach",
 			"'",
 			"var_dump",
@@ -561,6 +533,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$profile",
+			"\\StdClass",
+			"stdClass",
 			"\"",
 			"rand(50,100)",
 			"' , 'kcal' => str_random(100)],",
@@ -589,16 +564,16 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/Http/Controllers/AdminController.php",
+					"file": "/C/xampp/htdocs/busbooking/index.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5438,
+						"buffer_size": 876,
 						"regions":
 						{
 						},
@@ -612,126 +587,7 @@
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 390.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "resources/views/user/profile.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3993,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1151,
-								436
-							]
-						],
-						"settings":
-						{
-							"auto_name": "profile.blade.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/Http/Controllers/UserController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9640,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5571,
-								5534
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1213.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/Http/Controllers/MemberController.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								450,
-								468
-							]
-						],
-						"settings":
-						{
-							"auto_name": "MemberController.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/Http/routes.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2596,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1306,
-								1306
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -741,70 +597,42 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "resources/views/user/fplanner.blade.php",
+					"buffer": 1,
+					"file": "tests/MemberControllerTest.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2403,
+						"buffer_size": 6854,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								731,
-								731
+								6553,
+								6553
 							]
 						],
 						"settings":
 						{
-							"auto_name": "fplanner.blade.php",
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 2142.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "resources/views/user/bmr.blade.php",
+					"buffer": 2,
+					"file": "app/Http/Controllers/MemberController.php",
 					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3693,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								3693
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "resources/views/auth/register.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3903,
+						"buffer_size": 10218,
 						"regions":
 						{
 						},
@@ -822,69 +650,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 39.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "resources/views/auth/login.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2972,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								612,
-								612
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "resources/views/admin/users.blade.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1491,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1345,
-								1345
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 47.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -957,7 +726,7 @@
 		"selected_items":
 		[
 		],
-		"width": 1289.0
+		"width": 1189.0
 	},
 	"selected_group": 0,
 	"settings":
@@ -967,7 +736,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 423.0,
+	"side_bar_width": 240.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

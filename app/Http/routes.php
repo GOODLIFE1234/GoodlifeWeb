@@ -43,7 +43,6 @@ Route::group(['prefix' => 'member'], function () {
     Route::get('/foods-planner-history', 'MemberController@displayFoodPlannerHistory');
     Route::get('/{id}', 'MemberController@displayProfile');
 
-
 /*POST*/
     Route::post('/update', 'MemberController@postUpdateUser');
     Route::post('/food-planner', 'MemberController@postAddFoodPlanner');
@@ -52,10 +51,11 @@ Route::group(['prefix' => 'member'], function () {
 /*Admin*/
 Route::group(['prefix' => 'admin'], function () {
 /*GET*/
+    Route::get('/', 'AdminController@index');
     Route::get('/login', 'AdminController@index');
     /*User Management*/
     Route::get('/users/edit/{id}', 'AdminController@getEditUsers');
-    Route::get('/users/delete/{id}', 'AdminController@geDeleteUsers');
+    Route::get('/users/delete/{id}', 'AdminController@getDeleteUser');
     Route::get('/users', 'AdminController@getUsers');
     /*Food Management*/
     Route::get('/foods/edit/{id}', 'AdminController@getEditFood');
@@ -68,6 +68,7 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('/exercises/add', 'AdminController@getAddExercise');
     Route::get('/exercises', 'AdminController@getExercises');
 /*Post*/
+    Route::post('/login', 'AdminController@postLogin');
     Route::post('/foods/add', 'AdminController@postAddFood');
     Route::post('/foods/edit/{id}', 'AdminController@postUpdateFood');
     Route::post('/exercises/add', 'AdminController@postAddExercise');
