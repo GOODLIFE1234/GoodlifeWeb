@@ -44,7 +44,7 @@
 											$todayTotal += $totalCal;
 											}
 											?>
-											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>">[Delete]</a></div>
+											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>" onclick="return confirm('delete');">[Delete]</a></div>
 											<?php } endforeach?>
 										</td>
 										<?php } endforeach?>
@@ -69,7 +69,7 @@
 											$todayTotal += $totalCal;
 											}
 											?>
-											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>">[Delete]</a></div>
+											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>" onclick="return confirm('delete');">[Delete]</a></div>
 											<?php } endforeach?>
 										</td>
 										<?php } endforeach?>
@@ -87,7 +87,7 @@
 											$todayTotal += $totalCal;
 											}
 											?>
-											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>">[Delete]</a></div>
+											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>" onclick="return confirm('delete');">[Delete]</a></div>
 											<?php } endforeach?>
 										</td>
 										<?php } endforeach?>
@@ -105,7 +105,7 @@
 											$todayTotal += $totalCal;
 											}
 											?>
-											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>">[Delete]</a></div>
+											<div><?php echo e($food->name); ?> <?php echo e($totalCal); ?> cal <a href="<?php echo url('/member/food-planner/delete' . $querystring); ?>" onclick="return confirm('delete');">[Delete]</a></div>
 											<?php } endforeach?>
 										</td>
 										<?php } endforeach?>
