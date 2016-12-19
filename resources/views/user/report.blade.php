@@ -21,7 +21,7 @@
 								<?php 
 								$raw = json_decode($user->profile->raw); 
 								$left = $user->profile->bmr - $raw->todayFood;
-								$accelometer = 2.2*$user->profile->weight*$raw->todayTime;
+								$accelometer = (2.2*$user->profile->weight*$raw->todayTime)/3600;
 								?>
 								<h2>Calories Status</h2>
 								Today Calories : {{$raw->todayFood}} <br>

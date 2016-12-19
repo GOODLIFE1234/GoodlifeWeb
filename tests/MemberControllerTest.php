@@ -105,7 +105,7 @@ class MemberControllerTest extends TestCase
 
         $this->be($user);
         $response = $this->action('GET', 'MemberController@displayFoodPlanner')->original;
-        error_log($response, 3, "goodlife.log");
+        
         $this->assertEquals('Monday', $response['Day']);
         $this->assertEquals('Pizza:1=200Kcal', $response['Breakfast']);
         $this->assertEquals('-', $response['Lunch']);

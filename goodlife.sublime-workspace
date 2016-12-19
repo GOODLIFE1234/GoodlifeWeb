@@ -4,16 +4,52 @@
 		"selected_items":
 		[
 			[
+				"ra",
+				"randomFloat"
+			],
+			[
+				"a",
+				"action\tAttr"
+			],
+			[
+				"raw",
+				"rawUser"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
 				"re",
 				"return"
 			],
 			[
-				"null",
-				"null"
+				"ass",
+				"assertEquals"
 			],
 			[
-				"user",
-				"userS"
+				"text",
+				"text-align"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"jso",
+				"json_decode"
+			],
+			[
+				"de",
+				"defaultRaw"
+			],
+			[
+				"null",
+				"null"
 			],
 			[
 				"users",
@@ -21,14 +57,6 @@
 			],
 			[
 				"js",
-				"json_encode"
-			],
-			[
-				"json",
-				"json_encode"
-			],
-			[
-				"jso",
 				"json_encode"
 			],
 			[
@@ -259,7 +287,7 @@
 			"file": "app/Http/routes.php",
 			"settings":
 			{
-				"buffer_size": 3335,
+				"buffer_size": 3611,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -268,35 +296,79 @@
 			"file": "app/Http/Controllers/MemberController.php",
 			"settings":
 			{
-				"buffer_size": 11693,
+				"buffer_size": 16154,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "app/User.php",
+			"file": "app/Http/Middleware/VerifyCsrfToken.php",
 			"settings":
 			{
-				"buffer_size": 509,
+				"buffer_size": 316,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/E/Mark/Work/Poom/goodlife.html",
+			"settings":
+			{
+				"buffer_size": 178,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "public/goodlife.log",
+			"settings":
+			{
+				"buffer_size": 10,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/Models/UserProfile.php",
+			"settings":
+			{
+				"buffer_size": 810,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tests/MemberControllerTest.php",
+			"settings":
+			{
+				"buffer_size": 11597,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "resources/views/user/challenge.blade.php",
+			"settings":
+			{
+				"buffer_size": 2111,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "resources/views/user/report.blade.php",
 			"settings":
 			{
-				"buffer_size": 1533,
+				"buffer_size": 1911,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "resources/views/layouts/app.blade.php",
+			"file": "/C/Users/W.J/Downloads/RegisterCourse.php",
 			"settings":
 			{
-				"buffer_size": 5210,
+				"buffer_size": 17013,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -358,16 +430,33 @@
 		"/C/xampp/htdocs/goodlife/app/Http/Requests",
 		"/C/xampp/htdocs/goodlife/app/Models",
 		"/C/xampp/htdocs/goodlife/bootstrap",
+		"/C/xampp/htdocs/goodlife/database",
 		"/C/xampp/htdocs/goodlife/resources",
 		"/C/xampp/htdocs/goodlife/resources/views",
 		"/C/xampp/htdocs/goodlife/resources/views/admin",
 		"/C/xampp/htdocs/goodlife/resources/views/auth",
 		"/C/xampp/htdocs/goodlife/resources/views/layouts",
 		"/C/xampp/htdocs/goodlife/resources/views/user",
-		"/C/xampp/htdocs/goodlife/resources/views/vendor"
+		"/C/xampp/htdocs/goodlife/resources/views/vendor",
+		"/C/xampp/htdocs/goodlife/storage",
+		"/C/xampp/htdocs/goodlife/tests"
 	],
 	"file_history":
 	[
+		"/C/xampp/htdocs/goodlife/resources/views/user/fplanner.blade.php",
+		"/C/xampp/htdocs/goodlife/goodlife.log",
+		"/C/xampp/htdocs/goodlife/resources/views/user/report.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/user/challenge.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/layouts/app.blade.php",
+		"/C/xampp/htdocs/goodlife/resources/views/user/fadd.blade.php",
+		"/C/xampp/htdocs/goodlife/app/Models/UserProfile.php",
+		"/C/xampp/htdocs/goodlife/resources/views/user/foods.blade.php",
+		"/C/xampp/htdocs/goodlife/app/User.php",
+		"/C/xampp/htdocs/goodlife/app/Models/UserReport.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_12_19_002349_add_raw_data.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_12_19_000000_drop_challenge.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_12_19_001059_add_personal_data.php",
+		"/C/xampp/htdocs/goodlife/database/migrations/2016_12_19_002101_drop_challenge.php",
 		"/C/xampp/htdocs/busbooking/index.php",
 		"/C/xampp/htdocs/goodlife/resources/views/auth/login.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/auth/register.blade.php",
@@ -375,13 +464,9 @@
 		"/C/xampp/htdocs/goodlife/resources/views/admin/users.blade.php",
 		"/C/xampp/htdocs/goodlife/app/Http/Controllers/AdminController.php",
 		"/C/xampp/htdocs/goodlife/app/Http/Middleware/AdminAuthentication.php",
-		"/C/xampp/htdocs/goodlife/resources/views/user/fplanner.blade.php",
 		"/C/xampp/htdocs/goodlife/app/Http/Kernel.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/login.blade.php",
 		"/C/xampp/htdocs/goodlife/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
-		"/C/xampp/htdocs/goodlife/resources/views/user/challenge.blade.php",
-		"/C/xampp/htdocs/goodlife/resources/views/user/report.blade.php",
-		"/C/xampp/htdocs/goodlife/resources/views/layouts/app.blade.php",
 		"/C/xampp/htdocs/goodlife/app/Http/Controllers/MemberController.php",
 		"/C/xampp/htdocs/goodlife/app/Http/Controllers/Auth/AuthController.php",
 		"/C/xampp/htdocs/goodlife/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesAndRegistersUsers.php",
@@ -397,9 +482,7 @@
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_10_17_004319_update_user_profile.php",
 		"/C/xampp/htdocs/goodlife/resources/views/user/history.blade.php",
 		"/C/xampp/htdocs/goodlife/resources/views/admin/foods.blade.php",
-		"/C/xampp/htdocs/goodlife/resources/views/user/foods.blade.php",
 		"/C/xampp/htdocs/goodlife/storage/framework/views/d4ef73ece5e642d793aef8424f1f2a58a05cd204.php",
-		"/C/xampp/htdocs/goodlife/app/User.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123458_create_food_planner_table.php",
 		"/C/xampp/htdocs/goodlife/resources/views/user/profile.blade.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_10_16_205403_update_user.php",
@@ -410,7 +493,6 @@
 		"/C/xampp/htdocs/goodlife/app/Http/Middleware/RedirectIfAuthenticated.php",
 		"/C/xampp/htdocs/goodlife/app/Http/Middleware/EncryptCookies.php",
 		"/C/Games/World of Warcraft/WTF/Account/92210670#1/config-cache.wtf",
-		"/C/xampp/htdocs/goodlife/app/Models/UserProfile.php",
 		"/C/xampp/htdocs/goodlife/tests/TestCase.php",
 		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/home.blade.php",
 		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/master.blade.php",
@@ -442,7 +524,6 @@
 		"/C/xampp/htdocs/goodlife/app/Models/Exercise.php",
 		"/C/xampp/htdocs/goodlife/app/Models/ExercisePlanner.php",
 		"/C/xampp/htdocs/goodlife/app/Models/FoodPlanner.php",
-		"/C/xampp/htdocs/goodlife/app/Models/UserReport.php",
 		"/C/xampp/htdocs/goodlife/app/Models/UserMovement.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_16_123624_create_user_movement_table.php",
 		"/C/xampp/htdocs/goodlife/database/migrations/2016_07_24_021922_foods_data.php",
@@ -489,13 +570,7 @@
 		"/E/C# Work/CatWeb/CatForum/CatForum/Models/CatBreed.cs",
 		"/E/C# Work/CatWeb/CatForum/CatForum/Scripts/modernizr-2.6.2.js",
 		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/functions.php",
-		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/.htaccess",
-		"/C/xampp/htdocs/money-flow/app/Http/Kernel.php",
-		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/.env",
-		"/C/xampp/htdocs/money-flow/app/Http/Controllers/PlanController.php",
-		"/C/xampp/htdocs/money-flow/resources/views/plan/create.blade.php",
-		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/wp-config.php",
-		"/C/xampp/htdocs/por_project/wp-content/themes/twentysixteen/header.php"
+		"/C/Users/W.J/AppData/Local/Temp/fz3temp-1/.htaccess"
 	],
 	"find":
 	{
@@ -513,6 +588,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"district",
+			"ตำบล",
+			"MemberController::",
 			"profile",
 			"$user->profile",
 			"today",
@@ -568,6 +646,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"$controller->",
 			"$profile",
 			"\\StdClass",
 			"stdClass",
@@ -608,15 +687,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3335,
+						"buffer_size": 3611,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1481,
-								1481
+								555,
+								555
 							]
 						],
 						"settings":
@@ -626,10 +705,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 246.0,
+						"translation.y": 531.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -638,15 +717,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11693,
+						"buffer_size": 16154,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6216,
-								6216
+								14604,
+								14604
 							]
 						],
 						"settings":
@@ -656,7 +735,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2565.0,
+						"translation.y": 6045.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -664,11 +743,67 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/User.php",
-					"semi_transient": true,
+					"file": "app/Http/Middleware/VerifyCsrfToken.php",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 509,
+						"buffer_size": 316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								306,
+								306
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/E/Mark/Work/Poom/goodlife.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								170,
+								170
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "public/goodlife.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10,
 						"regions":
 						{
 						},
@@ -681,6 +816,34 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/Models/UserProfile.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 810,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								534,
+								547
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -689,24 +852,54 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "resources/views/user/report.blade.php",
+					"buffer": 6,
+					"file": "tests/MemberControllerTest.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1533,
+						"buffer_size": 11597,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								442,
-								442
+								3647,
+								3647
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1024.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "resources/views/user/challenge.blade.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								548,
+								548
 							]
 						],
 						"settings":
@@ -718,37 +911,66 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "resources/views/layouts/app.blade.php",
+					"buffer": 8,
+					"file": "resources/views/user/report.blade.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5210,
+						"buffer_size": 1911,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3525,
-								3525
+								1018,
+								1014
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/C/Users/W.J/Downloads/RegisterCourse.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 17013,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12676,
+								12475
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 495.0,
+						"translation.y": 3780.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]

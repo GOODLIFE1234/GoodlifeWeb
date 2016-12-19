@@ -427,10 +427,26 @@ class MemberController extends Controller
     }
     public function postSaveProgress(Request $request)
     {
+        // error_log($request->time, 3, "goodlife.log");
+        // return "Test";
         if ($request->has('id') && $request->has('time')) {
-            $user = User::find($request->id);
-            $raw  = json_decode($user->profile->raw);
-            $raw->todayTime += $request->time;
+            $user    = User::find($request->id);
+            $profile = $user->profile;
+
+            $raw            = json_decode($user->profile->raw);
+            $raw->todayTime = $request->time;
+
+            $randomFloat        = rand(2, 30) / 100;
+            $raw->todayVelocity = $randomFloat;
+
+            $distance = $raw->todayVelocity * $raw->todayTime;
+            if ($distance > $raw->todayDistance) {
+                $raw->todayDistance = $distance;
+            }
+
+            $calorie         = (1.8 * $profile->weight * $raw->todayTime)/3600;
+            $profile->record = $calorie;
+
             $user->profile->raw = json_encode($raw);
             $user->profile->save();
             return true;
