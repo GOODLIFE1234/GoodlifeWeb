@@ -173,6 +173,14 @@ class MemberController extends Controller
     {
         if (Auth::Check()) {
             $auth = Auth::user();
+
+            $rawUser = User::find($auth->id);
+            $raw     = $rawUser->profile->raw;
+            if ($raw === null || $raw === "") {
+                $raw = $rawUser->profile->saveRaw();
+            }
+            Session::put("rawData", json_decode($raw));
+            
             $user = User::find($auth->id);
             return view('user.challenge', ['user' => $user, 'test' => $this->testChallenge]);
         }
@@ -182,6 +190,14 @@ class MemberController extends Controller
     {
         if (Auth::Check()) {
             $auth = Auth::user();
+
+            $rawUser = User::find($auth->id);
+            $raw     = $rawUser->profile->raw;
+            if ($raw === null || $raw === "") {
+                $raw = $rawUser->profile->saveRaw();
+            }
+            Session::put("rawData", json_decode($raw));
+
             $user = User::find($auth->id);
             return view('user.report', ['user' => $user, 'test' => $this->testReport]);
         }
@@ -386,8 +402,8 @@ class MemberController extends Controller
     public function postSaveProgress(Request $request)
     {
         if ($request->has('id') && $request->has('time')) {
-            $user                   = User::find($request->id);
-            $raw = json_decode($user->profile->raw);
+            $user = User::find($request->id);
+            $raw  = json_decode($user->profile->raw);
             $raw->todayTime += $request->time;
             $user->profile->raw = json_encode($raw);
             $user->profile->save();

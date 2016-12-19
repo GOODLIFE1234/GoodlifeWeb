@@ -80,7 +80,7 @@ class MemberControllerTest extends TestCase
         $controller = new MemberController();
         $result     = $controller->addFoodPlanner(1, 1);
         $this->assertTrue($result);
-        $result = $controller->addFoodPlanner(99, 1);
+        $result = $controller->addFoodPlanner(99999, 1);
         $this->assertFalse($result);
     }
     public function testDelFoodPlanner()
@@ -90,7 +90,7 @@ class MemberControllerTest extends TestCase
         Session::put('foodPlanner', 'data');
         $result = $controller->delFoodPlanner(1, 1);
         $this->assertTrue($result);
-        $result = $controller->delFoodPlanner(99, 1);
+        $result = $controller->delFoodPlanner(99999, 1);
         $this->assertFalse($result);
     }
     public function testDisplayFoodPlanner()
