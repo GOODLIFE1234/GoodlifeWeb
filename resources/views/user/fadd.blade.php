@@ -6,7 +6,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Foods Calculator</div>
 				<div class="panel-body">
-					<form action="" method="POST">
+					<form action="<?php if (Auth::check()) {echo url('/member/food-planner');}?>" method="POST">
 						{{ csrf_field() }}
 						<div class="row">
 							@foreach($foods as $food)
@@ -45,9 +45,21 @@
 							</div> -->
 						</div>
 						<div class="row" style="padding-top: 20px;">
+							@if(Auth::check())
+							<div class="col-sm-12 text-center" >
+								<select name="time">
+									<option value="1">Breakfast</option>
+									<option value="2">Lunch</option>
+									<option value="3">Dinner</option>
+									<option value="4">Snack</option>
+								</select>
+								<button type="submit" class="btn btn-success" onclick="AddFood();" >Save Today Foods</button>
+							</div>
+							@else
 							<div class="col-md-12 text-center">
 								<button type="submit" class="btn btn-success">Add Foods</button>
 							</div>
+							@endif
 							<!-- <div class="col-sm-12 text-center" >
 														<button type="button" class="btn btn-success" onclick="AddFood();" >Add Food</button>
 							</div> -->
@@ -55,6 +67,7 @@
 					</form>
 				</div>
 			</div>
+			@if(!Auth::check())
 			<div class="panel panel-default" id="result">
 				<div class="panel-heading">Result</div>
 				<div class="panel-body">
@@ -82,6 +95,7 @@
 					</div>
 				</div>
 			</div>
+			@endif
 		</div>
 	</div>
 </div>

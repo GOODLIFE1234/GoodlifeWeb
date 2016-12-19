@@ -31,6 +31,8 @@ Route::post('/bmi', 'UserController@displayBMI');
 Route::post('/bmr', 'UserController@displayBMR');
 Route::post('/foods-calculator', 'UserController@displayFoods');
 Route::post('/exercises-calculator', 'UserController@displayExercises');
+
+Route::post('/api/save-progress', 'MemberController@postSaveProgress');
 /*Member*/
 Route::group(['prefix' => 'member'], function () {
 /*GET*/
@@ -38,14 +40,19 @@ Route::group(['prefix' => 'member'], function () {
     Route::get('/bmr', 'MemberController@displayBMR');
     Route::get('/foods', 'MemberController@displayFoods');
     /*End*/
+    Route::get('/report', 'MemberController@displayReport');
+    Route::get('/challenge', 'MemberController@displayChallenge');
+    Route::get('/notify', 'MemberController@notifyChallenge');
     Route::get('/food-planner/delete', 'MemberController@postDelFoodPlanner');
     Route::get('/food-planner', 'MemberController@displayFoodPlanner');
     Route::get('/foods-planner-history', 'MemberController@displayFoodPlannerHistory');
+    Route::get('/add-food', 'MemberController@displayAddFoods');
     Route::get('/{id}', 'MemberController@displayProfile');
 
 /*POST*/
     Route::post('/update', 'MemberController@postUpdateUser');
     Route::post('/food-planner', 'MemberController@postAddFoodPlanner');
+    Route::post('/chage-percent', 'MemberController@postChangeChallenge');
 });
 
 /*Admin*/

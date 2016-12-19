@@ -59,8 +59,10 @@
                             <ul class="dropdown-menu" role="menu">
                                 <?php $id = Auth::user()->id;?>
                                 <li><a href="{{ url('/member/food-planner'  ) }}"><i class="fa fa-btn fa-heart"></i>Food Planner</a></li>
+                                <li><a href="{{ url('/member/challenge'  ) }}"><i class="fa fa-btn fa-flash"></i>Challenge</a></li>
+                                <li><a href="{{ url('/member/report'  ) }}"><i class="fa fa-btn fa-clipboard"></i>Report</a></li>
                                 <li><a href="{{ url('/member/'.$id) }}"><i class="fa fa-btn fa-user"></i>Profile</a></li>
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <li><a href="{{ url('/logout') }}" onclick="return confirm('Confirm log out?')"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
                         </li>
                         @endif

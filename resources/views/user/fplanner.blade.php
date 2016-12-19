@@ -7,7 +7,7 @@
 				<div class="panel-heading">Food Planner</div>
 				<div class="panel-body">
 					<div>
-						<a href="<?php echo e(url('/foods-calculator')); ?>"><button type="submit" class="btn btn-success">Add Foods</button></a>
+						<a href="<?php echo e(url('/member/add-food')); ?>"><button type="submit" class="btn btn-success">Add Foods</button></a>
 						<a class="pull-right" href="<?php echo e(url('/member/foods-planner-history')); ?>">[History]</a>
 					</div>
 					<form method="POST" action="">
@@ -131,6 +131,12 @@
 									<strong>Left</strong>: <?php if($left >= 0): ?> <span style="color: green;"><?php echo e($left); ?></span> <?php elseif($left < 0): ?> <span style="color: red;"><?php echo e($left); ?></span> <?php endif; ?>
 								</div>
 							</div>
+							<?php 
+								$raw = session::get("rawData");
+								// echo var_dump($raw);
+								$raw->todayFood = $weekTotal;
+								Auth::user()->profile->saveRaw(json_encode($raw));
+							?>
 							<?php endif; ?>
 						</div>
 					</form>
