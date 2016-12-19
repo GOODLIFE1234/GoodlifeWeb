@@ -3,6 +3,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Food;
 use App\Models\FoodPlanner;
+use App\Models\UserProfile;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -175,12 +176,20 @@ class MemberController extends Controller
             $auth = Auth::user();
 
             $rawUser = User::find($auth->id);
-            $raw     = $rawUser->profile->raw;
+            $profile = $rawUser->profile;
+            if ($profile === null) {
+                $profile          = new UserProfile();
+                $profile->user_id = $rawUser->id;
+                $profile->save();
+                $profile->saveRaw();
+            }
+
+            $raw = $rawUser->profile->raw;
             if ($raw === null || $raw === "") {
                 $raw = $rawUser->profile->saveRaw();
             }
             Session::put("rawData", json_decode($raw));
-            
+
             $user = User::find($auth->id);
             return view('user.challenge', ['user' => $user, 'test' => $this->testChallenge]);
         }
@@ -192,7 +201,15 @@ class MemberController extends Controller
             $auth = Auth::user();
 
             $rawUser = User::find($auth->id);
-            $raw     = $rawUser->profile->raw;
+            $profile = $rawUser->profile;
+            if ($profile === null) {
+                $profile          = new UserProfile();
+                $profile->user_id = $rawUser->id;
+                $profile->save();
+                $profile->saveRaw();
+            }
+
+            $raw = $rawUser->profile->raw;
             if ($raw === null || $raw === "") {
                 $raw = $rawUser->profile->saveRaw();
             }
@@ -271,9 +288,18 @@ class MemberController extends Controller
     }
     public function displayFoodPlanner()
     {
-        $auth    = Auth::user();
+        $auth = Auth::user();
+
         $rawUser = User::find($auth->id);
-        $raw     = $rawUser->profile->raw;
+        $profile = $rawUser->profile;
+        if ($profile === null) {
+            $profile          = new UserProfile();
+            $profile->user_id = $rawUser->id;
+            $profile->save();
+            $profile->saveRaw();
+        }
+
+        $raw = $rawUser->profile->raw;
         if ($raw === null || $raw === "") {
             $raw = $rawUser->profile->saveRaw();
         }
